@@ -1,6 +1,7 @@
 package com.example.spacefax
 
 interface Contract {
+
     interface View {
 
     }

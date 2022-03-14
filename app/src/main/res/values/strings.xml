@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SPACEfaX</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spacexphoto1">spacexphoto1</string>
+    <string name="randomFactTextbox">This is a random fact</string>
+    <string name="click_for_next_spacefax">Click for next spacex fact!</string>
+    <string name="click_for_next_spacex_fact">Click for next SpaceX Fact!</string>
 </resources>

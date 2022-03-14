@@ -4,40 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1E3A4C"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
-        android:text="@string/this_is_a_fake_summary_that_goes_on_for_a_long_time"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="com.example.spacefax.FactFragment"
+        android:layout_width="0dp"
+        android:layout_height="491dp"
+        android:background="#A7A9AC"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="175dp"
-        android:layout_height="87dp"
-        android:layout_marginBottom="152dp"
-        android:text="@string/click_for_next_spacefax"
+        android:id="@+id/factButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="@string/click_for_next_spacex_fact"
+        android:textColor="#4E342E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="407dp"
-        android:layout_height="263dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"
-        app:srcCompat="@drawable/spacexphoto1"
-        tools:ignore="ImageContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
