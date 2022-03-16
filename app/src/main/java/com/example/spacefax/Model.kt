@@ -1,7 +1,9 @@
 package com.example.spacefax
 
+import java.util.*
+
 class Model : Contract.Model {
-    var spacePhotos = arrayOf(R.drawable.spacexphoto1,
+    private val spacePhotos = arrayOf(R.drawable.spacexphoto1,
                               R.drawable.spacexphoto2,
                               R.drawable.spacexphoto3,
                               R.drawable.spacexphoto4,
@@ -15,7 +17,7 @@ class Model : Contract.Model {
                               R.drawable.spacexphoto12,
                               R.drawable.spacexphoto13)
 
-    var randomFacts = arrayOf("RandomFact1",
+    private val randomFacts = arrayOf("RandomFact1",
                               "RandomFact2",
                               "RandomFact3",
                               "RandomFact4",
@@ -29,6 +31,16 @@ class Model : Contract.Model {
                               "RandomFact12",
                               "RandomFact13")
 
+    override fun getRandomImageID(): Int {
+            val random = Random()
+            val index = random.nextInt(spacePhotos.size)
+            return spacePhotos[index]
+    }
 
+    override fun getRandomFact(): String {
+        val random = Random()
+        val index = random.nextInt(randomFacts.size)
+        return randomFacts[index]
+    }
 
 }

@@ -7,16 +7,16 @@
     android:background="#1E3A4C"
     tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
+    <FrameLayout
         android:id="@+id/fragmentContainer"
-        android:name="com.example.spacefax.FactFragment"
         android:layout_width="0dp"
         android:layout_height="491dp"
         android:background="#A7A9AC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_fact" />
 
     <Button
         android:id="@+id/factButton"
