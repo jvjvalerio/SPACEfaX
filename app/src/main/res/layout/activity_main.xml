@@ -24,11 +24,13 @@
         android:layout_height="wrap_content"
         android:padding="30dp"
         android:text="@string/click_for_next_spacex_fact"
-        android:textColor="#4E342E"
+        android:textColor="@color/white"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer" />
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
