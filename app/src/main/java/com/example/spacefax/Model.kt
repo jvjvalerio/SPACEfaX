@@ -42,5 +42,4 @@ class Model : Contract.Model {
         val index = random.nextInt(randomFacts.size)
         return randomFacts[index]
     }
-
 }

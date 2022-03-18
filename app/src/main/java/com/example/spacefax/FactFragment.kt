@@ -13,6 +13,7 @@ class FactFragment : Fragment(), Contract.View
 {
     var imageView: ImageView?=null
     var title: TextView?=null
+
     private var presenter: Presenter?=null
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -40,6 +41,7 @@ class FactFragment : Fragment(), Contract.View
     fun onButtonClick(){
         presenter?.onButtonClick()
     }
+
 
     override fun changeAppearance(image: Int, randomFact: String) {
         imageView?.setImageResource(image)
