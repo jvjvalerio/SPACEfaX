@@ -1,0 +1,52 @@
+{
+    launchesPast(limit: 10) {
+        mission_name
+        launch_date_local
+        launch_site {
+            site_name_long
+        }
+        rocket {
+            rocket_name
+            first_stage {
+                cores {
+                    flight
+                    core {
+                        reuse_count
+                        status
+                    }
+                }
+            }
+            second_stage {
+                payloads {
+                    payload_type
+                    payload_mass_kg
+                    payload_mass_lbs
+                }
+            }
+        }
+        ships {
+            name
+            home_port
+        }
+    }
+    company {
+        ceo
+        coo
+        cto
+        cto_propulsion
+        employees
+        founded
+        founder
+        headquarters {
+            address
+            city
+            state
+        }
+        launch_sites
+        name
+        summary
+        test_sites
+        valuation
+        vehicles
+    }
+}

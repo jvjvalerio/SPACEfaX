@@ -9,10 +9,12 @@
 
     <ImageView
         android:id="@+id/spacexphoto1"
-        android:layout_width="413dp"
-        android:layout_height="402dp"
+        android:layout_width="420dp"
+        android:layout_height="329dp"
         android:contentDescription="@string/spacexphoto1"
         android:src="@drawable/spacexphoto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ImageContrastCheck" />
