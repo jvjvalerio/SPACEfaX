@@ -3,7 +3,7 @@ package com.example.spacefax
 interface Contract {
 
     interface View {
-        fun changeAppearance(image: Int, imageName: String)
+        fun changeAppearance(image: Int, randomFact: String)
     }
 
     interface Model {

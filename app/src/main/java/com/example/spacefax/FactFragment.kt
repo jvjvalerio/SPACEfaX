@@ -26,7 +26,7 @@ class FactFragment : Fragment(), Contract.View
         super.onViewCreated(view, savedInstanceState)
         presenter = Presenter(this)
         imageView = view.findViewById(R.id.spacexphoto1)
-        title = view.findViewById(R.id.randomFactTextbox)
+        title = view.findViewById(R.id.randomFactTextbox2)
     }
 
     companion object
@@ -41,9 +41,9 @@ class FactFragment : Fragment(), Contract.View
         presenter?.onButtonClick()
     }
 
-    override fun changeAppearance(image: Int, imageName: String) {
+    override fun changeAppearance(image: Int, randomFact: String) {
         imageView?.setImageResource(image)
-        title?.text = imageName
+        title?.text = randomFact
     }
 
     override fun onDestroyView() {
