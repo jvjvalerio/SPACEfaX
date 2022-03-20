@@ -7,28 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".FactFragment">
 
-    <ImageView
-        android:id="@+id/spacexphoto1"
-        android:layout_width="420dp"
-        android:layout_height="329dp"
-        android:contentDescription="@string/spacexphoto1"
-        android:src="@drawable/spacexphoto1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck" />
-
     <TextView
         android:id="@+id/randomFactTextbox2"
         android:layout_width="341dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="20dp"
         android:background="#000000"
-        android:text="@string/randomFactTextbox"
+        android:text='@string/welcome_to_spacefax_for_the_most_up_to_date_facts_click_on_the_get_next_spacefax_button_below'
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spacexphoto1" />
+        app:layout_constraintTop_toBottomOf="@+id/elonsayshello" />
+
+    <ImageView
+        android:id="@+id/elonsayshello"
+        android:layout_width="408dp"
+        android:layout_height="304dp"
+        android:contentDescription="@string/elonsayshello"
+        android:src="@drawable/elonsayshello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

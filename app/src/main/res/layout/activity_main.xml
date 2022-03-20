@@ -11,8 +11,8 @@
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
-        android:layout_width="415dp"
-        android:layout_height="494dp"
+        android:layout_width="408dp"
+        android:layout_height="527dp"
         android:background="@drawable/starrystarrybackground"
         app:layout_constraintBottom_toTopOf="@+id/factButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         android:id="@+id/factButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="28dp"
         android:padding="30dp"
         android:text="@string/next_spacefax"
         android:textAllCaps="false"
@@ -35,7 +35,6 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Next SPACEfaX"
         tools:visibility="visible" />
