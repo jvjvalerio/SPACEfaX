@@ -3,15 +3,11 @@ package com.example.spacefax
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 
 class MainActivity : AppCompatActivity(){
 
-    // Initialization of fragment, imageview, and fact variables
+    // Initialization of fragment variable
     private var fragment: FactFragment?=null
-    var imageView: ImageView?=null
-    var fact: TextView?=null
 
     // override onCreate method to implement fragment
     override fun onCreate(savedInstanceState: Bundle?) {
